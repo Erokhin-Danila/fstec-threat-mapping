@@ -1,5 +1,4 @@
 **Description**
-
 - This tool automates the process of transition from old threat models (linear numbering of UBI.001-UBI.227) to new ones (hierarchical numbering of X.Y.Z according to MOUBI-2021). 
 The program uses a combined approach that includes text analysis, semantic classification, and heuristic rules based on official FSTEC documentation.
 
@@ -15,6 +14,13 @@ The program requires the **installation of dependencies** in the main project fo
 - new_list.xlsx - New list of threats (X.Y.Z)
 - old_list.xlsx - Old list of threats (UBI.001-UBI.227)
 
-**Running:**
 
+**Parameters**
+- old - the old threat list file (CSV/XLSX)
+- new - the new threat list file (CSV/XLSX)
+- out - the output file with the results
+- threshold - the automatic matching threshold (default is 60)
+
+
+**Running:**
 - python Mapping.py -old old_list.xlsx -new new_list.xlsx -not working mapping_result.xlsx -threshold 60
