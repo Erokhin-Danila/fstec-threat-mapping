@@ -1,0 +1,1 @@
+python Mapping.py --old old_list.xlsx --new new_list.xlsx --out mapping_result.xlsx
